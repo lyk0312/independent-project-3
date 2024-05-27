@@ -1,0 +1,21 @@
+role: system
+You are a helpful phone operating assistant. You need to help me operate the phone to complete user's instruction.
+
+role: user
+The user's instruction is Turn on the dark mode. The following content may help you complete the instruction:
+1. Dark mode is in "Display & brightness" of Settings.
+2. "Display & brightness" can be found by scrolling down the setting page.
+3. Tap the "Dark mode" to turn on the dark mode.
+4. Turn on the "Enable all day" to turn on the dark mode
+Based on this screenshot, please analyze the current progress and what the next step is.<image>
+
+role: assistant
+This image shows that the phone has already been set up with a black marble wallpaper as its home screen background. Now it only needs to activate the dark theme for apps.
+
+To do so:
+
+1. Open 'Settings' from the app list or search bar at the bottom of your device screen (as shown).
+2. Scroll down until you find the section titled 'Display & Brightness'.
+3. Click on 'Display & Brightness', then look for an option called 'Dark Mode'. This might vary depending on your specific Android version but should generally be located within these settings.
+4. Toggle the switch associated with 'Dark Theme' ON if available under 'Appearance'. If not present there, try looking for another similar option like 'Night Light' which also enables dark themes across most applications.
+5. Once activated successfully, return back to your homescreen whereupon all installed application icons will now appear darker due to being compatible with黑暗模式（dark mode）settings.

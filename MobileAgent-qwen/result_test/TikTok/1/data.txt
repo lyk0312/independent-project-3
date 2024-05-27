@@ -1,0 +1,64 @@
+role: system
+You are a helpful phone operating assistant. You need to help me operate the phone to complete user's instruction.
+
+role: user
+The user's instruction is Find a video about cat in TikTok and tap a like for this video. The following content may help you complete the instruction:
+1. Scroll down to change videos in TikTok.
+2. Tap the icon of grey heart to like.
+Based on this screenshot, please analyze the current progress and what the next step is.<image>
+
+role: assistant
+From the image, we can see that there is no open application named "TikTok". Therefore, it seems impossible to find or interact with any specific video within TikTok from this screen.
+
+However, if I were able to access TikTok as per your instructions, my steps would be:
+
+1. Open the TikTok app (which isn't visible here).
+2. Search for the keyword 'cat' using the search bar at the top.
+3. Browse through the results until finding an appropriate video related to cats.
+4. Once found, swipe left on the video preview to view more options such as liking, commenting, sharing, etc., then tap the gray heart button located near the bottom center of the screen to like the video.
+
+But since TikTok doesn't appear in the provided image, these actions cannot currently be performed based on the available information.
+
+role: user
+Based on the above analysis, please select the most appropriate action from the following 9 actions:
+open app (parameter): Click on the name of an App on the desktop home page. The parameter is the name of App. You can only use this action on the desktop.
+tap text (parameter): The parameter is the text you need to click. If there is text at the click position, use this action in preference.
+tap icon (parameter1, parameter2): The parameter1 is the description of the icon you want to click. The parameter2 selected 1 out of 5 from the top, bottom, left, right and center, represents the general location of the icon on the screenshot.
+scroll up: Scroll up the current page.
+scroll down: Scroll down the current page.
+type (parameter): The parameter is what you want to type. Make sure you have clicked on the input box before typing.
+back: Back to the previous page.
+exit: Exit the app and go back to the desktop.
+stop: If the instruction has been completed, stop the process.
+Please select just one action with parameter if necessary.
+
+role: assistant
+Since TikTok does not appear in the given image, none of the listed actions apply directly. However, considering the context where someone might try to perform tasks involving apps they don't have displayed on their phone, the closest applicable action could be `click on the name of an App on the desktop home page`. This assumes that the person will first navigate to the desktop home page and look for the desired app by its name. In reality, without knowing which app should be opened, further clarification is needed to provide accurate guidance.
+
+role: user
+Your output is not in the required format. Please note the use of parentheses. Your output must be one of the following format:
+open app (parameter)
+tap text (parameter)
+tap icon (parameter1, parameter2)
+scroll up
+scroll down
+type (parameter)
+back
+exit
+stop
+
+role: assistant
+I apologize for the misunderstanding earlier. Based on the lack of visibility regarding the actual app names present on the device, I am unable to suggest precise actions. Instead, let me rephrase them according to the specified format:
+
+* Since TikTok is missing from the image, we do not know how to proceed with opening it specifically. We assume that once TikTok appears, follow the same procedure mentioned previously.
+        + open app (TikTok)
+
+If TikTok was already open but couldn't locate the requested video, we'd continue searching for other ways to fulfill the task.
+        + scroll down
+
+In case the user needs assistance navigating the app interface, consider providing additional details.
+        + tap text (search term)
+
+
+
+{'action': 'tap', 'operation': 'open app (TikTok)', 'parameter': '[81.0, 865.8]', 'session_id': 'e727c816863c4cd0bb44c2c2dc712d8e'}

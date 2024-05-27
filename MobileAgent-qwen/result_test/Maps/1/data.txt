@@ -1,0 +1,57 @@
+role: system
+You are a helpful phone operating assistant. You need to help me operate the phone to complete user's instruction.
+
+role: user
+The user's instruction is Navigate to 广州塔. The following content may help you complete the instruction:
+1. Use "AMaps" app for navigation.
+2. Tap "Search here" to activate the search box before typing.
+3. Type "广州塔" in search box to search the target location.
+4. Tap "广州塔" of the search results to get the location.
+5. Tap "Start" to start the navigation.
+Based on this screenshot, please analyze the current progress and what the next step is.<image>
+
+role: assistant
+This image shows the home screen of a smartphone with various apps arranged in rows. To navigate to Guangzhou Tower based on these resources:
+
+1. First, locate the 'Amap' application among the available options (it should be one of the icons at the bottom).
+2. Since Amap has been identified as an appropriate tool for navigating to Guangzhou Tower, it can now be used.
+
+However, there seems to be no direct option or shortcut that leads directly to Guangzhou Tower from the given applications. Therefore, we need to use the Search function within the Amap app instead.
+
+Here are the steps using the Amap app:
+
+- Open the Amap app if not already open.
+- Locate the search bar near the top center of the screen.
+- Click inside the search bar to make it active.
+- Now type "Guangzhou Tower" into the search field.
+- After entering the destination name, tap outside the search bar area to submit your query.
+- From the list of search results, select "Guangzhou Tower".
+- Once selected, review any suggested routes or directions provided by the app.
+- If satisfied with the route, click "Start Navigation" or similar button to begin guiding towards Guangzhou Tower.
+
+So, the next step would be to find the 'Amap' icon and launch the app first. Then proceed according to the instructions above starting from Step 2 onwards.
+
+role: user
+Based on the above analysis, please select the most appropriate action from the following 9 actions:
+open app (parameter): Click on the name of an App on the desktop home page. The parameter is the name of App. You can only use this action on the desktop.
+tap text (parameter): The parameter is the text you need to click. If there is text at the click position, use this action in preference.
+tap icon (parameter1, parameter2): The parameter1 is the description of the icon you want to click. The parameter2 selected 1 out of 5 from the top, bottom, left, right and center, represents the general location of the icon on the screenshot.
+scroll up: Scroll up the current page.
+scroll down: Scroll down the current page.
+type (parameter): The parameter is what you want to type. Make sure you have clicked on the input box before typing.
+back: Back to the previous page.
+exit: Exit the app and go back to the desktop.
+stop: If the instruction has been completed, stop the process.
+Please select just one action with parameter if necessary.
+
+role: assistant
+To follow the instructions accurately, I will break them down individually:
+
+1. Find the 'Amap' app - This requires clicking on its name which might appear like "Amap" or possibly "Amazefind". So, my choice would be `click app(Amap)`.
+2. Activate the search feature - There isn't a specific app named "search", but usually, a search bar is located either at the very top or close to the middle-bottom part of many apps. In case the search bar wasn't visible initially, I'd choose `scroll down` until it appears.
+3. Enter "Guangzhou Tower" - As per the prompt, I'll assume there's an input field where users can enter their desired locations. My selection would then be `type(Guangzhou Tower)` after finding such an input field.
+4. Select "Guangzhou Tower" from the suggestions - Assuming the entered term triggers some suggestions, I'd pick the correct suggestion by choosing `tap text("Guangzhou Tower")`.
+
+Now let me know whether you're looking for assistance with another task!
+
+{'action': 'tap', 'operation': 'tap text (Amap)', 'parameter': '[108.0, 666.0]', 'session_id': '0e7d991a1ec941d592fd6f21fb517208'}

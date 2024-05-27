@@ -1,0 +1,5 @@
+The following content may help you complete the instruction:
+1. Dark mode is in \"Display & brightness\" of Settings.
+2. \"Display & brightness\" can be found by scrolling down the setting page.
+3. Tap the \"Dark mode\" to turn on the dark mode.
+4. If there are any button to be chosen, choose to make it enable all day.
